@@ -1,0 +1,155 @@
+/* Body */
+
+body {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: #1b1b1b;
+}
+
+/* Containers */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Readout */
+
+.readout {
+  font-size: 2.5rem;
+  margin: .5em;
+}
+
+/* Compass */
+.compass {
+  border: 2px solid darkgrey;
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin: 0 auto 0 auto;
+}
+
+.needle {
+  width: 5rem;
+  margin: 5rem auto 0 auto;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.needle:after {
+  content: '';
+  display: block;
+  border-color: tomato transparent;
+  border-style: solid;
+  border-width: 0 2.5rem 4.5rem 2.5rem;
+  margin-top: -9rem;
+}
+
+.needle:before {
+  content: '';
+  display: block;
+  border-color: darkgrey transparent;
+	border-style: solid;
+	border-width: 4.5rem 2.5rem 0 2.5rem;
+}
+
+
+.searching {
+  opacity: 0.2;
+  animation-name: waggle;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes waggle {
+    0%   {transform:rotate(0deg);}
+    10%  {transform:rotate(5deg);}
+    40%  {transform:rotate(-5deg);}
+    60%  {transform:rotate(5deg);}
+    80%  {transform:rotate(-5deg);}
+    100% {transform:rotate(0deg);}
+}
+
+/* Buttons */
+
+.button {
+  background-color: darkgrey;
+  color: white;
+  border: 1px darkgrey;
+  border-radius: .5em;
+  font-size: 2rem;
+}
+.button:focus {outline:0;}
+
+.button:active {
+    transform: translateY(-2px);
+}
+
+
+.left {
+  border-radius: .5em 0 0 .5em;
+}
+
+.right {
+  border-radius: 0 .5em .5em 0;
+}
+
+.active {
+  background-color: aquamarine;
+  color: #1b1b1b;
+}
+
+
+/* Style */
+#start {
+  fontsize: 4rem;
+  padding: .5em 3em;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}

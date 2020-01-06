@@ -1,0 +1,14 @@
+{
+  "name": "Speed and Heading",
+  "short_name": "Speed",
+  "description": "Speedometer",
+  "start_url": "/",
+  "theme_color": "#1b1b1b",
+  "background_color": "#1b1b1b",
+  "icons": [{
+    "src": "/images/meter.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "display": "standalone"
+}

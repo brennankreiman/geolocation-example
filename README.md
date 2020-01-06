@@ -1,4 +1,4 @@
-#Geolocation Example
+# Geolocation Example #
 
 Example for building a PWA for Speed and Heading
 

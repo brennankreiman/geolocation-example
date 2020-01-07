@@ -4,7 +4,7 @@
   "description": "Speedometer & compass using geolocation api",
   "start_url": "/",
   "theme_color": "#1b1b1b",
-  "background_color": "#1b1b1b",
+  "background_color": "aquamarine",
   "icons": [{
     "src": "/images/meter.png",
     "sizes": "512x512",

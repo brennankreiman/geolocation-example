@@ -1,7 +1,7 @@
 {
   "name": "Speed and Heading",
   "short_name": "Speed",
-  "description": "Speedometer",
+  "description": "Speedometer & compass using geolocation api",
   "start_url": "/",
   "theme_color": "#1b1b1b",
   "background_color": "#1b1b1b",

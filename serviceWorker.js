@@ -1,5 +1,5 @@
-const version = 91546;
-const cachePrefix = 'speedmeterV2-';
+const version = 0000001;
+const cachePrefix = 'geolocation-app';
 const staticCacheName = `${cachePrefix}static-${version}`;
 const expectedCaches = [staticCacheName];
 
@@ -8,7 +8,6 @@ addEventListener('install', event => {
     const cache = await caches.open(staticCacheName);
 
     await cache.addAll([
-      './',
       '/index.html',
       '/images/meter.png',
       '/index.js',
